@@ -1,0 +1,121 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Set up NextJS Project",
+        "description": "Create a new NextJS project with the App Directory structure. Configure the project with necessary dependencies like React, TailwindCSS, and ShadUI.",
+        "details": "- Initialize a new NextJS project using the 'create-next-app' command\n- Set up the App Directory structure for routing and server components\n- Install and configure React, TailwindCSS, and ShadUI libraries\n- Ensure the project is properly configured and can be run locally",
+        "testStrategy": "Verify the project can be started successfully and that the default NextJS page is displayed correctly.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Implement Basic UI Components",
+        "description": "Create reusable UI components for the chat interface, including message bubbles, input field, and mode toggle.",
+        "details": "- Design and implement React components for chat message display, user input, and mode switching\n- Style the components using TailwindCSS and ShadUI to achieve the desired look and feel\n- Ensure the components are responsive and accessible",
+        "testStrategy": "Verify the UI components render correctly, handle user interactions as expected, and adhere to the design specifications.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Set up Supabase Local Instance",
+        "description": "Install and configure a local Supabase instance to be used for development and testing.",
+        "details": "- Follow the Supabase_Migrations_Local.md guide to set up a local Supabase instance\n- Create the necessary database tables and schemas for storing chat sessions and messages\n- Ensure the local Supabase instance is properly configured and accessible from the NextJS application",
+        "testStrategy": "Verify the local Supabase instance is running correctly, the database schema is set up as expected, and the NextJS application can connect to the local Supabase instance.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Implement Text Chat Functionality",
+        "description": "Integrate the OpenAI API for text-based chat, enabling users to send messages and receive real-time responses.",
+        "details": "- Implement the client-side logic to handle user input and send requests to the OpenAI API\n- Use the OpenAI streaming API to display the response as it's being generated\n- Ensure the chat interface provides a smooth and responsive user experience",
+        "testStrategy": "Verify the text chat functionality works as expected, including sending messages, receiving streaming responses, and handling any errors or rate limits from the OpenAI API.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Store Chat Messages in Supabase",
+        "description": "Integrate the Supabase database to store chat messages and sessions.",
+        "details": "- Create Supabase Edge Functions to handle the logic for storing chat messages and sessions\n- Implement the client-side logic to interact with the Supabase Edge Functions\n- Ensure chat messages and sessions are properly persisted in the Supabase database",
+        "testStrategy": "Verify that chat messages and sessions are correctly stored in the Supabase database, and that the application can retrieve and display the chat history as needed.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Implement Image Generation Mode",
+        "description": "Add the capability to switch between text chat and image generation modes.",
+        "details": "- Implement the UI toggle to switch between text chat and image generation modes\n- Integrate the OpenAI API for image generation using the gpt-image-1 model\n- Ensure the image generation mode provides a seamless user experience",
+        "testStrategy": "Verify that the mode toggle works as expected, and that the image generation functionality is properly integrated, including handling user input, sending requests to the OpenAI API, and displaying the generated images.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Implement 'New Chat' Functionality",
+        "description": "Add the ability for users to start a fresh conversation, clearing the previous chat history.",
+        "details": "- Implement the 'New Chat' button or functionality in the UI\n- Clear the current chat history and reset the interface when a new chat is started\n- Store the previous chat session in the Supabase database for future reference",
+        "testStrategy": "Verify that the 'New Chat' functionality works as expected, clearing the current chat history and resetting the interface, while also ensuring the previous chat session is properly stored in the Supabase database.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Implement Error Handling",
+        "description": "Enhance the application to handle errors gracefully, providing appropriate feedback to users.",
+        "details": "- Implement error handling for API requests to OpenAI and Supabase\n- Display meaningful error messages to users when issues occur\n- Ensure the application can recover from errors and continue functioning",
+        "testStrategy": "Verify that the application can handle various error scenarios, including rate limits, network issues, and API failures, and that users are provided with clear and helpful feedback.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Implement Loading States",
+        "description": "Add loading states to provide visual feedback to users during API requests and data processing.",
+        "details": "- Implement loading indicators for text chat responses and image generation\n- Ensure the loading states are visually consistent and do not disrupt the user experience\n- Handle loading states for both client-side and server-side operations",
+        "testStrategy": "Verify that the loading states are correctly displayed during API requests and data processing, and that the user experience remains smooth and responsive.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Enhance UI Polish and Responsiveness",
+        "description": "Refine the user interface with improved styling, animations, and responsive design.",
+        "details": "- Review and enhance the overall UI design, including typography, color scheme, and layout\n- Implement subtle animations and transitions to improve the visual appeal\n- Ensure the application is responsive and works well across different devices and screen sizes",
+        "testStrategy": "Verify that the UI is visually appealing, consistent, and responsive across various devices and screen sizes, and that the animations and transitions enhance the user experience.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "done",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-06-17T07:23:49.376Z",
+      "updated": "2025-06-19T07:47:09.040Z",
+      "description": "Tasks for master context"
+    }
+  }
+}
