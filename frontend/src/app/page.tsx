@@ -75,7 +75,8 @@ export default function Home() {
     // Optionally store the old session in Supabase
     if (messages.length > 0) {
       try {
-        await fetch('http://localhost:8000/store-session', {
+        const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+        await fetch(`${API_BASE_URL}/store-session`, {
           method: 'POST',
           headers: new Headers({
             'Content-Type': 'application/json',
